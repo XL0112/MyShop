@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZJHRecommendViewController">
+            <connections>
+                <outlet property="leftTableView" destination="SuP-15-9jh" id="3e4-0W-KMS"/>
+                <outlet property="rightTableView" destination="e0k-e6-9sn" id="Jsf-gh-5VL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SuP-15-9jh" userLabel="left">
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="Ydo-aR-cxt"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ZRm-1g-jvI"/>
+                        <outlet property="delegate" destination="-1" id="1ZU-zv-jaC"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e0k-e6-9sn" userLabel="right">
+                    <rect key="frame" x="120" y="0.0" width="255" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hhm-cT-n9o"/>
+                        <outlet property="delegate" destination="-1" id="yOh-Ez-KHe"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SuP-15-9jh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Cr-ah-9LP"/>
+                <constraint firstAttribute="bottom" secondItem="e0k-e6-9sn" secondAttribute="bottom" id="dv1-og-qyd"/>
+                <constraint firstAttribute="bottom" secondItem="SuP-15-9jh" secondAttribute="bottom" id="gu1-aD-pzl"/>
+                <constraint firstItem="SuP-15-9jh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pX7-Q7-HEq"/>
+                <constraint firstAttribute="trailing" secondItem="e0k-e6-9sn" secondAttribute="trailing" id="qxd-gA-n1U"/>
+                <constraint firstItem="e0k-e6-9sn" firstAttribute="leading" secondItem="SuP-15-9jh" secondAttribute="trailing" id="rIB-GN-Ij3"/>
+                <constraint firstItem="e0k-e6-9sn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xZ5-ei-nfk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="229.5" y="251.5"/>
+        </view>
+    </objects>
+</document>

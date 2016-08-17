@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string>Snip20160616_1</string>
+		<key>money</key>
+		<string>4702</string>
+		<key>name</key>
+		<string>苹果手机 Apple iPhone SE 64g</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Snip20160616_1</string>
+		<key>money</key>
+		<string>1149</string>
+		<key>name</key>
+		<string>小米 红米Note3 全网通版 2GB+16GB 金色 移动联通电信4G手机 双卡双待</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Snip20160616_1</string>
+		<key>money</key>
+		<string>3321</string>
+		<key>name</key>
+		<string>苹果（Apple）iPad Air 2 9.7英寸平板电脑 16G WiFi版</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Snip20160616_1</string>
+		<key>money</key>
+		<string>2999</string>
+		<key>name</key>
+		<string>Apple iPad mini 4 16G</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Snip20160616_1</string>
+		<key>money</key>
+		<string>6088</string>
+		<key>name</key>
+		<string>iPhone6 Plus 5.5英寸 16G</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Snip20160616_1</string>
+		<key>money</key>
+		<string>7280</string>
+		<key>name</key>
+		<string>Apple iPhone6s Plus 64G</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Snip20160616_1</string>
+		<key>money</key>
+		<string>7280</string>
+		<key>name</key>
+		<string>Apple iPhone6s 128G</string>
+	</dict>
+</array>
+</plist>

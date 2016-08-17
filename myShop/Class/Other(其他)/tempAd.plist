@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>imageName</key>
+		<string>MainTagSubIconClick</string>
+		<key>text</key>
+		<string>分类</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>Pentacle</string>
+		<key>text</key>
+		<string>新品上架</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>recommendMLS</string>
+		<key>text</key>
+		<string>热门推荐</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>praiseSelected</string>
+		<key>text</key>
+		<string>常见问题</string>
+	</dict>
+</array>
+</plist>

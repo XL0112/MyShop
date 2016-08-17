@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZJHAdvertisementViewController">
+            <connections>
+                <outlet property="adImageV" destination="e7K-UP-ElF" id="HW2-aF-mln"/>
+                <outlet property="bottomImageV" destination="XiX-s2-Sho" id="3JU-HU-sXh"/>
+                <outlet property="jumpBtn" destination="Fgv-6k-UaX" id="MjL-AZ-fNd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XiX-s2-Sho">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e7K-UP-ElF">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgv-6k-UaX">
+                    <rect key="frame" x="250" y="20" width="50" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="跳过(3)"/>
+                    <connections>
+                        <action selector="jumpBtnClick:" destination="-1" eventType="touchUpInside" id="357-Pi-DtQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XiX-s2-Sho" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2r2-Ly-nef"/>
+                <constraint firstAttribute="trailing" secondItem="Fgv-6k-UaX" secondAttribute="trailing" constant="20" id="3zg-lX-5R4"/>
+                <constraint firstItem="Fgv-6k-UaX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="4Ur-fo-q3H"/>
+                <constraint firstAttribute="bottom" secondItem="XiX-s2-Sho" secondAttribute="bottom" id="BaQ-YI-8QI"/>
+                <constraint firstAttribute="trailing" secondItem="XiX-s2-Sho" secondAttribute="trailing" id="dWx-KZ-ORf"/>
+                <constraint firstItem="e7K-UP-ElF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="djt-hn-tjI"/>
+                <constraint firstItem="XiX-s2-Sho" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="g94-lq-aJ1"/>
+                <constraint firstAttribute="bottom" secondItem="e7K-UP-ElF" secondAttribute="bottom" id="mPl-28-oNS"/>
+                <constraint firstItem="e7K-UP-ElF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="w6F-wV-DW7"/>
+                <constraint firstAttribute="trailing" secondItem="e7K-UP-ElF" secondAttribute="trailing" id="xc5-AV-dJf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="126" y="257"/>
+        </view>
+    </objects>
+</document>

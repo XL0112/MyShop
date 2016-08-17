@@ -1,0 +1,112 @@
+//
+//  myShop.pch
+//  myShop
+//
+//  Created by zjh on 16/6/15.
+//  Copyright © 2016年 home. All rights reserved.
+//
+
+#ifndef Entertainer_PrefixHeader_pch
+#define Entertainer_PrefixHeader_pch
+
+#ifdef __OBJC__
+
+/*------------------------------------------------------*/
+#pragma mark - 常用宏
+// keyWindow获取宏
+#define KEY_WINDOW [UIApplication sharedApplication].keyWindow
+// 主场景尺寸获得
+#define SCREEN_BOUNDS [UIScreen mainScreen].bounds
+#define SCREEN_H SCREEN_BOUNDS.size.height
+#define SCREEN_W SCREEN_BOUNDS.size.width
+#define iPhone6P (SCREEN_H == 736)
+#define iPhone6 (SCREEN_H == 667)
+#define iPhone5 (SCREEN_H == 568)
+#define iPhone4 (SCREEN_H == 480)
+
+// 弱引用
+#define Weak_Self __weak typeof(self) weakSelf = self
+
+
+
+
+
+/*------------------------------------------------------*/
+#pragma mark - 调试替代宏
+// 调试的输出宏
+#ifdef DEBUG //当前调试阶段
+#define DLog(...) NSLog(__VA_ARGS__)
+#else // 非调试阶段
+#define DLog(...)
+#endif
+// 方法打印宏
+#define LOG_FUNC DLog(@"%s",__func__);
+
+
+
+
+
+/*------------------------------------------------------*/
+#pragma mark - 夜间模式
+#import "DKNightVersion/DKNightVersion.h"
+
+#pragma mark - 辅助拓展
+
+//#import "ConstValue.h"
+//
+//#import "NSObject+UserDefaults.h"
+//
+//#import "NSString+UserDefaults.h"
+//#import "NSString+TextSize.h"
+//
+//#import "UIView+Frame.h"
+//#import "UIView+XIB.h"
+//
+//基本的url
+#define ZJHBaseUrl @"http://api.budejie.com/api/api_open.php"
+
+#import "UIImage+processing.h"
+#import "UIView+frame.h"
+#import "UIImage+imageName.h"
+#import "ConstValue.h"
+#import "NSString+TextSize.h"
+#import "UIBarButtonItem+ZJHItem.h"
+
+/*------------------------------------------------------*/
+#pragma mark - 百度地图
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
+
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>//引入云检索功能所有的头文件
+
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
+
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>//引入计算工具所有的头文件
+
+#import <BaiduMapAPI_Radar/BMKRadarComponent.h>//引入周边雷达功能所有的头文件
+
+#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
+
+
+/*------------------------------------------------------*/
+#pragma mark - 颜色拓展
+#define ARGBColor(ALPHA,RED,GREEN,BLUE) [UIColor colorWithRed:(RED)/255.0 green:(GREEN)/255.0 blue:(BLUE)/255.0 alpha:(ALPHA)/255.0]
+#define RGBColor(red,green,blue) ARGBColor(255, (red), (green), (blue))
+#define GrayColor(grayscale) ARGBColor(255, (grayscale), (grayscale), (grayscale))
+
+// 随机色
+#define RandomColor RGBColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+// 统一背景色
+#define CommonBackgroundColor GrayColor(230)
+#define WhiteColor [UIColor whiteColor]
+
+
+
+/*------------------------------------------------------*/
+
+#endif
+
+#endif
